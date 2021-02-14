@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Temp\ws-eclipse\java_completo_udemy\.metadata\.plugins\org.eclipse.jdt.core
+4095658889.index
