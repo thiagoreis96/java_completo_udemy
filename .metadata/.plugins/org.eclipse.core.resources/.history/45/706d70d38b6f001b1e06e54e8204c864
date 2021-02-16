@@ -1,0 +1,33 @@
+package entities;
+
+public class Student {
+	
+	public String name;
+	public double n1;
+	public double n2;
+	public double n3;
+	
+	public double finalGrade() {
+		return n1 + n2 + n3;
+	}
+	
+	public double result() {
+		double result
+		if (finalGrade() > 60.00) {
+			
+		}
+	}
+	
+	public String pass() {
+		return "PASS";
+	}
+	
+	public String failed() {
+		return "FAILED";
+	}
+	
+	public String toString() {
+		return "FINAL GRADE = "
+			+ String.format("%.2f", finalGrade());
+	}
+}

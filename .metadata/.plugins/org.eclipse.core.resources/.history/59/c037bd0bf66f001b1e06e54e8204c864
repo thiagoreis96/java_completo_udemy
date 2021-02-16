@@ -1,0 +1,9 @@
+package util;
+
+public class CurrencyConverter {
+	
+	public static double dolar(double dolar) {
+		
+	}
+
+}

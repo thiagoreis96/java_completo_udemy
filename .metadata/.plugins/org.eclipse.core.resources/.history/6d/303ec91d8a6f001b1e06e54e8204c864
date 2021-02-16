@@ -1,0 +1,24 @@
+package entities;
+
+public class Student {
+	
+	public String name;
+	public double n1;
+	public double n2;
+	public double n3;
+	
+	public double finalGrade() {
+		return n1 + n2 + n3;
+	}
+	
+	public String pass() {
+		return "PASS";
+	}
+	
+	public String
+	
+	public String toString() {
+		return "FINAL GRADE = "
+			+ finalGrade();
+	}
+}
