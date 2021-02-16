@@ -1,0 +1,14 @@
+package entities;
+
+public class BankClient {
+	
+	private int account;
+	private int holder;
+	private double balance;
+	
+	public void deposit(double deposit) {
+		this.balance += deposit;
+	}
+	
+	
+}

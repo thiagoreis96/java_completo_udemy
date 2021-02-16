@@ -1,0 +1,20 @@
+package entities;
+
+public class BankClient {
+	
+	private int account;
+	private String holder;
+	private double balance;
+	
+	public BankClient(int ac)
+	
+	public void deposit(double deposit) {
+		balance += deposit;
+	}
+	
+	public void withdraw(double withdraw) {
+		balance -= withdraw - 5;
+	}
+	
+	
+}

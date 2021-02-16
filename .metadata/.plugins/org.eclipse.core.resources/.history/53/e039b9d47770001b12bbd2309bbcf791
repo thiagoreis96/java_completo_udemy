@@ -1,0 +1,35 @@
+package exercises;
+
+import java.util.Locale;
+import java.util.Scanner;
+import entities.BankClient;
+
+public class Ex05 {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter account number: ");
+		int account = sc.nextInt();
+		sc.nextLine();
+		System.out.print("Enter account holder: ");
+		String holder = sc.nextLine();
+		System.out.print("Is there an initial deposit (y/n)? ");
+		char initial = sc.next().charAt(0);
+		if (initial == 'y') {
+			System.out.print("Enter inicial deposit value: ");
+			double deposit = sc.nextDouble();
+			BankClient client = new BankClient(account, holder, deposit);
+		} else {
+			BankClient client = new BankClient(account, holder);
+		}
+		
+		System.out.println();
+		System.out.println("Account data:");
+		
+		
+		sc.close();
+	}
+}
