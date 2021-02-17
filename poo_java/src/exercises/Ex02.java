@@ -2,7 +2,7 @@ package exercises;
 
 import java.util.Locale;
 import java.util.Scanner;
-import entities.Employee;
+import entities.Employee2;
 
 public class Ex02 {
 
@@ -11,7 +11,7 @@ public class Ex02 {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		Employee functionary = new Employee();
+		Employee2 functionary = new Employee2();
 		
 		System.out.print("Name: ");
 		functionary.name = sc.nextLine();

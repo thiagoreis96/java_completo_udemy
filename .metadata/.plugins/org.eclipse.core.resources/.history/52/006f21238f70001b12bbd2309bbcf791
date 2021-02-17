@@ -1,0 +1,9 @@
+package entities;
+
+public class Product2 {
+	
+	private String name;
+	private double price;
+	
+	
+}
