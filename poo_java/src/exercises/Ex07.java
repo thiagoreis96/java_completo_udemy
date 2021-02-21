@@ -25,10 +25,10 @@ public class Ex07 {
 			System.out.println("Employee #" + (i + 1) + ":");
 			System.out.print("Id: ");
 			Integer id = sc.nextInt();
-			System.out.println("Name: ");
+			System.out.print("Name: ");
 			sc.nextLine();
 			String name = sc.nextLine();
-			System.out.println("Salary: ");
+			System.out.print("Salary: ");
 			Double salary = sc.nextDouble();
 			
 			Employee emp = new Employee(id, name, salary);
@@ -36,10 +36,23 @@ public class Ex07 {
 			list.add(emp);
 		}
 		
-		System.out.println("Enter the employee id that will have salary increase: ");
+		System.out.println();
+		System.out.print("Enter the employee id that will have salary increase: ");
 		int idSalary = sc.nextInt();
 		Integer pos = position(list, idSalary);
+		if (pos == null) {
+			System.out.println("This id does not exist!");
+		} else {
+			System.out.print("Enter the percentage: ");
+			double percent = sc.nextDouble();
+			list.get(pos).increaseSalary(percent);
+		}
 		
+		System.out.println();
+		System.out.println("List of employess:");
+		for (Employee emp : list) {
+			System.out.println(emp);
+		}
 		
 		sc.close();
 	}
