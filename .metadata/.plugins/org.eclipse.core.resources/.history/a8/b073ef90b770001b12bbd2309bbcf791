@@ -1,7 +1,0 @@
-package exercises;
-
-Locale.setDefault(Locale.US);
-
-public class Ex07 {
-
-}
